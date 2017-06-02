@@ -10,6 +10,7 @@
 // @updateURL https://github.com/sanyamensky/zombs.io/raw/master/script.js
 // ==/UserScript==
 
+(function() {
     heal =  document.getElementsByClassName('hud-shop-item')[9];
 	petHeal = document.getElementsByClassName('hud-shop-item')[10];
 	useHeal = document.getElementsByClassName('hud-toolbar-item')[4];
@@ -18,12 +19,12 @@
 	up = new Event('mouseup');
 
 	HEAL = function(){
+		heal.attributes.class.value = 'hud-shop-item';
+		petHeal.attributes.class.value = 'hud-shop-item';
 		useHeal.dispatchEvent(up);
 		usePetHeal.dispatchEvent(up);
 		heal.click();
 		petHeal.click();
-		heal.attributes.class.value = 'hud-shop-item';
-		petHeal.attributes.class.value = 'hud-shop-item';
 	};
 
 	script = function(e){
@@ -42,4 +43,5 @@
 	    });
 	});
 	observer.observe(healthBar, { attributes : true, attributeFilter : ['style'] });
+})();
 
