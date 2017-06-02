@@ -13,12 +13,13 @@
 
 
 (function() {
-  heal =  document.getElementsByClassName('hud-shop-item')[9];
+        heal =  document.getElementsByClassName('hud-shop-item')[9];
 	petHeal = document.getElementsByClassName('hud-shop-item')[10];
 	useHeal = document.getElementsByClassName('hud-toolbar-item')[4];
 	usePetHeal = document.getElementsByClassName('hud-toolbar-item')[5];
 	healthBar = document.getElementsByClassName('hud-health-bar-inner')[0];
 	up = new Event('mouseup');
+	healLevel = 70
 
 	HEAL = function(){
 		heal.attributes.class.value = 'hud-shop-item';
@@ -39,10 +40,12 @@
 	});
 	observer = new MutationObserver(function(mutations) {
 	    mutations.forEach(function(mutationRecord) {
-	        if(parseInt(mutations[0].target.style.width) < 60){
+	        if(parseInt(mutations[0].target.style.width) < healLevel){
 	        	HEAL();
 	        }
 	    });
 	});
 	observer.observe(healthBar, { attributes : true, attributeFilter : ['style'] });
 })();
+
+
