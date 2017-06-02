@@ -11,6 +11,7 @@
 // ==/UserScript==
 
 (function() {
+    '';
     heal =  document.getElementsByClassName('hud-shop-item')[9];
 	petHeal = document.getElementsByClassName('hud-shop-item')[10];
 	useHeal = document.getElementsByClassName('hud-toolbar-item')[4];
