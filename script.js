@@ -1,5 +1,15 @@
+// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        *://zombs.io/*
+// @grant        none
+// ==/UserScript==
 
-  heal =  document.getElementsByClassName('hud-shop-menu-item')[9];
+(function() {
+    heal =  document.getElementsByClassName('hud-shop-menu-item')[9];
 	petHeal = document.getElementsByClassName('hud-shop-menu-item')[10];
 	useHeal = document.getElementsByClassName('hud-toolbar-item')[4];
 	usePetHeal = document.getElementsByClassName('hud-toolbar-item')[5];
@@ -31,6 +41,4 @@
 	    });
 	});
 	observer.observe(healthBar, { attributes : true, attributeFilter : ['style'] });
-scr.txt
-Открыть в приложении "Google Документы"
-scr.txt. На экране.
+})();
