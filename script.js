@@ -13,7 +13,7 @@
 
 
 (function() {
-        heal =  document.getElementsByClassName('hud-shop-item')[9];
+	heal =  document.getElementsByClassName('hud-shop-item')[9];
 	petHeal = document.getElementsByClassName('hud-shop-item')[10];
 	useHeal = document.getElementsByClassName('hud-toolbar-item')[4];
 	usePetHeal = document.getElementsByClassName('hud-toolbar-item')[5];
@@ -47,5 +47,4 @@
 	});
 	observer.observe(healthBar, { attributes : true, attributeFilter : ['style'] });
 })();
-
 
