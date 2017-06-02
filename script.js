@@ -23,8 +23,8 @@
 		usePetHeal.dispatchEvent(up);
 		heal.dispatchEvent(up);
 		petHeal.dispatchEvent(up);
-		heal.attributes.class.value = 'hud-shop-menu-item';
-		petHeal.attributes.class.value = 'hud-shop-menu-item';
+		heal.attributes.class.value = 'hud-shop-item';
+		petHeal.attributes.class.value = 'hud-shop-item';
 	};
 
 	script = function(e){
@@ -44,3 +44,4 @@
 	});
 	observer.observe(healthBar, { attributes : true, attributeFilter : ['style'] });
 })();
+
