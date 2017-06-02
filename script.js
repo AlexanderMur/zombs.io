@@ -15,7 +15,7 @@
 	petHeal = document.getElementsByClassName('hud-shop-item')[10];
 	useHeal = document.getElementsByClassName('hud-toolbar-item')[4];
 	usePetHeal = document.getElementsByClassName('hud-toolbar-item')[5];
-	healthBar = document.getElementsByClassName('hud-health-bar')[0];
+	healthBar = document.getElementsByClassName('hud-health-bar-inner')[0];
 	up = new Event('mouseup');
 
 	HEAL = function(){
