@@ -6,6 +6,8 @@
 // @author       You
 // @match        *://zombs.io/*
 // @grant        none
+// @downloadURL https://github.com/sanyamensky/zombs.io/raw/master/script.js
+// @updateURL https://github.com/sanyamensky/zombs.io/raw/master/script.js
 // ==/UserScript==
 
 (function() {
